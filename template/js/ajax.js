@@ -1,5 +1,4 @@
 /**
- *
  * @param method request method get or post
  * @param url requested url
  * @param data data to be sent

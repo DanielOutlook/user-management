@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/js/ajax.js"></script>
+</head>
+<body>
+<button>Setup Cookie</button>
+<button>Get Cookie</button>
+<script>
+    var aBtn = document.getElementsByTagName("button");
+    aBtn[0].onclick = function(){
+        ajax({
+            method: "GET",
+            url: '/setcookie',
+            success: function(result){
+                console.log(result);
+            }
+        });
+    }
+
+    aBtn[1].onclick = function(){
+        ajax({
+            method: "GET",
+            url: '/getcookie',
+            data: '{}',
+            success: function(result){
+                console.log(result);
+            }
+        });
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
